@@ -1,0 +1,154 @@
+
+.imagem {
+    background-image: url(poli_3.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+    left: 41%;
+    
+    
+}
+html {
+    
+    background: linear-gradient(to bottom right, #868622 40%, #000000 100%),
+    linear-gradient(to top left,  #868622 40%, #000000 100%);   
+    background-blend-mode: multiply; 
+    
+    background-repeat: no-repeat;
+    height: 1000px;  width: 100%;
+    overflow-x: hidden;
+    
+    
+}
+
+
+
+
+h1 {
+    position: absolute;
+    left: 440px;
+    top: 122px;
+    color: rgb(236, 234, 234);
+    font-size: 55px;
+    
+
+}
+
+
+
+.container {
+    background-color: #55555588;
+    width: 40%; height: 700px;
+    position: relative;
+    top: 220px;
+    left: 90px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    font-size: 23px;
+    border: 2px solid #66666666;
+    
+    
+}
+
+.container label {
+    margin-left: 10px; 
+    padding: 0; 
+    font-size: 23px;
+}
+
+
+.dentro {
+    position: absolute;
+    left: 15px;
+    font-size: 30px;
+    margin: 0px;
+    color: white;
+    
+    
+    
+}
+
+input {
+
+    width: 500px; height: 45px;
+    border-radius: 10px;
+    background-color: #80808080;
+    border: none;
+    margin-left: 10px;
+    box-sizing: border-box;
+    
+}    
+input::placeholder {
+    color: #333333;
+    
+
+
+}
+
+a {
+    color: #000000;
+    
+
+}
+#a {
+    color: #bbbb20;
+    margin-left: 195px;
+    position: relative;
+    bottom: 20px;
+    
+    
+    
+    
+
+}
+a:hover {
+    color: #46460b;
+
+}
+
+#marcar {
+    font-size: 10px;
+    display: inline-block;
+    width: 10px; height: 10px;
+    color: 80808080;
+
+
+}
+.termos {
+    color: #bbbb20;
+
+
+}
+
+.marcar {
+    font-size: 20px;
+
+}
+
+button {
+    background-color: yellow;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    margin-bottom: 0px;
+    
+    
+    
+    
+
+}
+
+button:hover {
+    background-color: rgb(68, 68, 27);
+
+}
+ #cadastrar {
+text-decoration: none;
+
+ }

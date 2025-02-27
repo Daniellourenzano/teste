@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="projeto2.css">
+</head>
+<body>
+    <h1>Cadastro - Trainee</h1>
+    <div class="imagem">
+    <main class="container"> <!--onde fica o bloco em que coloca-se os inputs-->
+        
+        <form action="" method="post" class="dentro">
+            <div>
+                <p></p> <!--a partir daqui, os inputs com label-->
+                <label for="input-nome">Nome:</label>
+                <br>
+                <input type="text" placeholder="digite seu nome" name="nome" id="input-nome">
+            </div>
+            <br>
+            <div>
+                <label for="input-data">Data de Nascimento:</label>
+                <br>
+                <input type="date" name="data" id="input-data">
+            </div> 
+            <br>   
+            <div>
+                <label for="input-email">Email:</label>
+                <br>
+                <input type="email" id="input-email" name="email" placeholder="ex: abc@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="input-senha">Senha:</label>
+                <br>
+                <input type="password" name="senha" id="input-senha" placeholder="ex: abc.123">
+            </div>
+            <br>
+            <div>
+                <label for="input-csenha">Confirmar Senha:</label>
+                <br>
+                <input type="password" name="csenha" id="input-csenha" placeholder="ex: abc.123">
+            </div>
+            <div class="marcar"> <!--marcar para concordar com os termos e condições-->
+            <input type="checkbox" id="marcar"> <span>li e concordo com os <a class="termos"> termos</a> e <a class="termos">condições de uso</a></span> <!-- não sei qual href colocar para os termos e condições-->
+            </div>
+            <div>
+                <p><button type="submit"><a id="cadastrar" href="projeto3.html" >Finalizar Cadastro</a></button></p> <!--leva para a página do site-->
+                <p><small><a id="a" href="projeto1.html">Fazer login</a></small></p> <!--leva para a aba de login, caso o usuário já tenha conta-->
+            </div>
+           
+        </div>
+        </form>
+    </main>       
+
+
+    
+</body>
+</html>

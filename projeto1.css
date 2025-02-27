@@ -1,0 +1,142 @@
+
+html {
+    background: linear-gradient(to bottom right, #868622 40%, #000000 100%),
+    linear-gradient(to top left,  #868622 40%, #000000 100%);   
+    background-blend-mode: multiply; 
+    height: 120%; width: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+
+.imagem {
+    background-image: url(poli_3.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+    left: 44.5%;
+}
+
+
+h1 {
+    position: absolute;
+    left: 525px;
+    top: 122px;
+    color: rgb(236, 234, 234);
+    font-size: 55px;
+
+}
+
+
+.container {
+    background-color: #55555588;
+    width: 35%; height: 450px;
+    
+
+    position: relative;
+    top: 220px;
+    left: -160px;
+    border-radius: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    font-size: 23px;
+    border: 2px solid #66666666;
+    
+    
+    
+}
+
+.container label {
+    margin-left: 10px; 
+    padding: 0; 
+    font-size: 23px;
+}
+
+
+.dentro {
+    position: absolute;
+    left: 15px;
+    font-size: 30px;
+    color: white;
+    
+    
+    
+}
+
+input {
+
+    width: 410px; height: 50px;
+    border-radius: 10px;
+    background-color: #80808080;
+    border: none;
+    font-size: 17px;
+    margin-left: 10px;
+    
+}    
+input::placeholder {
+    color: #333333;
+    
+
+
+}
+#input-check {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 100px;
+    width: 10px;
+    height: 10px;
+
+}
+.marcar {
+
+    width: 100px; height: 10px; margin-left: 30px;
+    font-size: 20px;
+    
+
+}
+a {
+    color: #bbbb20;
+    margin-left: -10px;
+
+}
+a:hover {
+    color: #46460b;
+
+}
+
+button {
+    background-color: yellow;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 180px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    
+    
+
+}
+
+button:hover {
+    background-color: rgb(68, 68, 27);
+
+}
+.cadastro {
+    position: absolute;
+    bottom: 30px;
+    left: 125px;
+}
+#nãotemumaconta {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 49%;
+    margin-bottom: 50px;
+    transform: translateX(-50%);
+    
+
+}
+#logar {
+color: #000000;
+text-decoration: none;
+}

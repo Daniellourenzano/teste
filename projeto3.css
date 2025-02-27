@@ -1,0 +1,526 @@
+
+.topo { /*cabeçalho*/
+    background-color: black;
+    position: absolute;
+    top: 0px; left: 0px;
+    height: 100px;
+    width: 1600px;
+    z-index: 1;
+    
+}
+/***********/
+
+#imagem1 {  /*imagem da poli*/
+
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+html{    /*define a cor de fundo, cor das letras, tamanho, e limita o movimento lateral da tela*/
+background-color: #111111;
+color: white;
+font-size: 20px;
+width: 600px;
+height: 140%;
+overflow-x: hidden;
+}
+
+#parte1 { /*div parte 1*/
+
+    margin-left: 200px;
+    
+
+}
+
+
+
+#perfil {   /*cada tópico remete a algo do perfil: imagem, nome grande da conta, @ da conta e texto, 
+    assim como suas posições, formas e cores*/
+
+    position: relative;
+    top: 25px; 
+    margin-bottom: 100px;
+
+
+}
+
+#nomeperfil {
+    position: absolute;
+    left: 100px;
+    top: -5px;
+
+
+}
+#conta {
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    color: #555555;
+    font-size: 15px;
+
+
+}
+
+#imagem2 {
+    
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: block;
+    border-radius: 500px;
+    width: 60px; height: 60px;
+    margin-right: 50px;
+}
+
+
+#texto1 {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 500px;
+
+}
+
+#comentarios1 { /*icones*/
+
+    position: absolute;
+    top: 175px; left: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+
+}
+
+#curtida1 {
+
+    position: absolute;
+    top: 175px; left: 100px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+
+}
+/*************/
+
+#perfil2 {  /* esse é o segundo boco da primeira parte, e age da mesma maneira que o primeiro*/
+    position: relative;
+    top: 240px;
+    margin-bottom: 100px;
+
+
+
+}
+
+#imagem22 {
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    display: block;
+    border-radius: 500px;
+    width: 60px; height: 60px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#comentarios2 {
+
+    position: absolute;
+    top: 470px; left: 10px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+
+}
+
+#curtida2 {
+
+    position: absolute;
+    top: 470px; left: 80px;
+    width: 80px;
+    height: 30px;
+
+}
+
+
+#nomeperfil2 {
+    position: absolute;
+    left: 100px;
+
+
+
+}
+#conta2{
+    position: absolute;
+    left: 100px;
+    top: 12px;
+    color: #555555;
+    font-size: 15px;
+
+
+
+
+}
+
+#imagem3 {
+    border-radius: 20px;
+    position: absolute;
+    top: 70px;
+    width: 580px; height: 550;
+
+}
+
+#texto2 {
+    position: absolute;
+    top: 500px;
+    width: 500px;
+
+
+}
+
+/*******************************************/
+
+#parte2 {  /*essa parte remete ao bloco da direita, quem somos nós. É dividida entre o texto e o botão de ver mais, que abrirá os popups*/
+    position: relative;
+    top: 100px;
+    left: 900px;
+
+
+
+}
+
+button {
+
+    position: absolute;
+    left: 0px;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 0px 140px;
+    font-size: 18px;
+    height: 60px;
+    width: 370px;
+    border: none;
+    
+    
+
+}
+
+button:hover {
+
+    background-color: rgb(68, 68, 27);
+
+
+}
+/**************/
+#comentario { /*esse é o botão de + no qual você comenta*/
+    position: absolute;
+    left: 350px; top: 690px;
+    background-color: yellow;
+    border-radius: 1000px;
+    padding: 0px 0px;
+    font-size: 18px;
+    height: 80px;
+    width: 80px;
+    border: none;
+
+}
+#twitter { /*área do popup*/
+    background-color: #111111;
+    border-radius: 10px;
+    width: 600px; height: 350px;
+    border: none;
+}
+
+#comente { /*input do popup*/
+    background-color: #111111;
+    width: 635px;
+    height: 60px;
+    position: absolute;
+    top: 50px; left: 0px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+   border-top: 2px solid white;
+
+}
+
+ /*indica que quando abrir, o fundo escurecerá*/
+#twitter::backdrop{
+    background-color: #000000aa;
+
+
+}
+
+#titulocomente { 
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    color: white;
+    margin: 0px;
+    
+
+}
+
+#comente::placeholder {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+
+
+}
+
+#fecharpopup4 { /* x superior*/
+    color: white;
+    position: absolute;
+    margin: 0px;
+    top: -10px;
+    left: 600px;
+    width: 0px; height: 0;
+    padding: 0;
+    
+   /*************************/ 
+
+}
+
+#popup { /*esse é o popup do ver mais, indico tudo dele nessa parte, onde fecha, abre, passa, volta, cor...
+     da mesma forma que no popup anterior, mas nesse precisei usar um pouco de js*/
+     /*dividi os 3 popups, mas são todos organizados quase que da mesma forma*/
+    position: relative;
+    width: 600px; height: 350px;
+    background-color:   #ffd10099;
+    color: white;
+    border: none;
+
+
+}
+
+#popup::backdrop{
+    background-color: #000000aa;
+
+
+}
+
+#fecharpopup {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 0px;
+    padding: 0px 0px;
+    color: white;
+    
+
+}
+
+#titulo {
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    font-size: 50px;
+
+
+
+
+}
+#lobo1 {
+    position: absolute;
+    left: 0px; top: 0px;
+    width: 300px; height: 100%;
+
+
+}
+#texto1popup {
+    position: absolute;
+    left: 50%;
+    top: 140px;
+    font-size: 22px;
+
+}
+
+#seta1 { /*missao - visao*/
+    width: 0px;
+    color: white;
+    position: absolute;
+    bottom: 5px; left: 600px;
+    padding: 0px 0px;
+    font-size: 20px;
+
+}
+/********************/
+#popup2 {
+    position: relative;
+    width: 600px; height: 350px;
+    background-color:   #ffd10099;
+    color: white;
+    border: none;
+
+
+}
+
+#popup2::backdrop{
+    background-color: #000000aa;
+
+
+}
+
+#fecharpopup2 {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 0px;
+    padding: 0px 0px;
+    color: white;
+    
+
+}
+
+#titulo2 {
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    font-size: 50px;
+
+
+
+
+}
+#lobo2 {
+    position: absolute;
+    left: 0px; top: 0px;
+    width: 300px; height: 100%;
+
+
+}
+#texto2popup {
+    position: absolute;
+    left: 50%;
+    top: 140px;
+    font-size: 22px;
+
+}
+
+#seta2 { /*volta, fechando o atual e abrindo o anterior*/
+    width: 0px;
+    color: white;
+    position: absolute;
+    bottom: 5px; left: 580px;
+    padding: 0px 0px;
+    font-size: 20px;
+
+}
+
+#seta3 { /* adiante, fechando o atual e abrindo o próximo*/
+
+ width: 0px;
+    color: white;
+    position: absolute;
+    bottom: 5px; left: 600px;
+    padding: 0px 0px;
+    font-size: 20px;
+
+
+
+}
+/**********************/
+#popup3 {
+    position: relative;
+    width: 600px; height: 350px;
+    background-color:   #ffd10099;
+    color: white;
+    border: none;
+
+
+}
+
+#popup3::backdrop{
+    background-color: #000000aa;
+
+
+}
+
+#fecharpopup3 {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 0px;
+    padding: 0px 0px;
+    color: white;
+    
+
+}
+
+#titulo3 {
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    font-size: 50px;
+
+
+
+
+}
+#lobo3 {
+    position: absolute;
+    left: 0px; top: 0px;
+    width: 300px; height: 100%;
+
+
+}
+#texto3popup {
+    position: absolute;
+    left: 50%;
+    top: 140px;
+    font-size: 22px;
+
+}
+
+#seta4 { /*volta*/
+    width: 0px;
+    color: white;
+    position: absolute;
+    bottom: 5px; left: 580px;
+    padding: 0px 0px;
+    font-size: 20px;
+
+}
+
+#seta5 { /*passa*/
+
+ width: 0px;
+    color: white;
+    position: absolute;
+    bottom: 5px; left: 600px;
+    padding: 0px 0px;
+    font-size: 20px;
+
+
+
+}
+#icones {
+
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 120px;
+    height: 27px;
+
+
+}
+
+#postar {
+    position: absolute;
+    left: 80%;
+    bottom: 5%;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0;
+
+
+}

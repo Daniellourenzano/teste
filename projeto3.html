@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projeto3.css" type="text/css">
+</head>
+<body>
+    <thead>
+        <img src="imagem_2025-02-23_021447522 (1) (1).png" id="imagem1"></img>
+        <div class="topo"></div>
+
+    </thead>
+
+
+    <div id="parte1">
+                       
+        <tbody> 
+            <div id="perfil"> <!--parte do perfil, com foto de perfil, nome, @, texto e ícones-->
+                <img src="loboperfill.png" alt="" id="imagem2"><p id="nomeperfil">Poli júnior Engenharia</p>
+                <p id="conta">@polijuniorengenharia</p>
+                <p id="texto1">
+                    Falta apenas um mês para começarmos nossa incrível jornada da pradaria até o deserto polar! <br>
+                    Estamos prontos para explorar paisagens deslumbrantes e descobrir as maravilhas que a natureza tem a oferecer.</p>
+                    <img src="comentários.png" id="comentarios1">  <img src="curtida (1).png" id="curtida1" alt="">
+            </div>
+            <div id="perfil2"><!--aqui é onde tem a segunda foto de perfil com os componentes, mas uma foto grande diferente e outro texto-->
+                <img src="loboperfill.png" alt="" id="imagem22"><span id="nomeperfil2">Poli júnior Engenharia</span>
+                <p id="conta2">@polijuniorengenharia</p>
+                <img src="lobo1printerest.jpg" id="imagem3">
+                <img src="comentários.png" id="comentarios2">  <img src="curtida (1).png" id="curtida2" alt="">
+                
+
+                <p id="texto2"> <strong> Da Pradaria ao Deserto Polar: Uma Jornada Inesquecível!</strong> <br>
+                    Deixe-se levar pela imensidão das pradarias e sinta o vento gelado dos desertos  polares em uma viagem que desafia <br> limites e revela a beleza oculta dos extremos</p>
+                   
+            </div>
+    </div>       
+        <div id="parte2"> <!--segunda parte, que fica à direita-->
+            <h1>Quem somos nós</h1>
+             <div id="caixatexto">
+                    <p>Desde de 2006 impactando a sociedade <br> Pernambucana, a Poli Júnior Engenharia, <br> mais do que faz projetos de engenharia, <br>
+                    cria e desenvolve soluções inovadoras para o <br> mercado, transformando ideias em realidade.
+                    </p>
+                    <p>Alinhando nossa capacidade às necessidades <br> dos nossos clientes, entregamos soluções <br> personalizadas, principalmente, 
+                para empresas <br> de pequeno e médio porte, estabelecidas <br> ou sediadas em Pernambuco e estados <br> adjacentes.</p>
+                </div>
+                <button id="comentario"><h1>+</h1></button> <!--botão pára abrir o dialog(popup) de comentário-->
+                <button id="vermais"><h4>Ver mais</h4></button><!--abrir popup de informações-->
+
+                <dialog id="twitter"> <!--todos os dialog são indicativos de popup-->
+                    <input type="text" id="comente" placeholder="No que você está pensando, Poli Júnior Engenharia?">
+                    <h2 id="titulocomente">Criar nova publicação</h2> <!-- coloquei texto em todos e botões-->
+                    <button id="fecharpopup4"><h2 >X</h2></button>
+                    <img src="icones.png" id="icones" alt="">
+                    <button id="postar">Postar</button>
+
+                </dialog>
+
+               
+
+                <dialog id="popup">
+                    <h2 id="titulo">Missão</h2>
+                    <p id="texto1popup">Transformar a realidade dos nossos <br> stakeholders, de forma inovadora e constante, <br> através da formação de líderes.</p>
+                    <img src="popuplobo1.webp" id="lobo1" alt="">
+                    <button id="fecharpopup"><h2>X</h2></button><!--onde tem x, é para fechar o popup-->
+                    <button id="seta1"><h2>></h2></button> <!--as setas para direita avançam, para a esquerda retrocedem-->
+                </dialog>
+
+                <dialog id="popup2">
+                    <h2 id="titulo2">Visão</h2>
+                    <p id="texto2popup">
+                        Ser referência na constância <br> de resultados no MEJ Pernambucano.</p>
+                    <img src="popuplobo2.webp" id="lobo2" alt="">
+                    <button id="fecharpopup2"><h2>X</h2></button>
+                    <button id="seta2"><h2> < </h2></button>
+                    <button id="seta3"><h2> > </h2></button>
+                    
+                </dialog>
+
+                <dialog id="popup3">
+                    <h2 id="titulo3">Valores</h2>
+                    <p id="texto3popup">
+                        Juntos somos mais fortes. <br>
+                        Penso e atuo como dono da Poli Júnior. <br>
+                        Vingamos nosso passado, construímos nosso futuro. </p>
+   
+                    <img src="popuplobo3.webp" id="lobo3" alt="">
+                    <button id="fecharpopup3"><h2>X</h2></button>
+                    <button id="seta4"><h2> < </h2></button>
+                    <button id="seta5"><h2> > </h2></button>
+                </dialog>
+
+                <script>
+                    const coment = document.querySelector("#comentario");
+                    const dialog4 = document.querySelector("#twitter"); //aqui eu declaro que cada um desses id será algo existente e válido para algo
+                    const closebutton4 = document.querySelector("#fecharpopup4")
+
+                    const dialog = document.querySelector("#popup");
+                    const openButton = document.querySelector("#vermais");
+                    const closeButton = document.querySelector("#fecharpopup");
+                    const seta1 = document.querySelector("#seta1")
+                    
+
+                    const dialog2 = document.querySelector("#popup2");
+                    const openButton2 = document.querySelector("#vermais2");
+                    const closeButton2 = document.querySelector("#fecharpopup2");
+                    const seta2 = document.querySelector("#seta2");
+                    const seta3 = document.querySelector("#seta3");
+
+                    const dialog3 = document.querySelector("#popup3");
+                    const openButton3 = document.querySelector("#vermais3");
+                    const closeButton3 = document.querySelector("#fecharpopup3");
+                    const seta4 = document.querySelector("#seta4");
+                    const seta5 = document.querySelector("#seta5");
+
+
+                    openButton.addEventListener("click", (e) => {  //aqui eu chamo cada termo existente e atribuo funções a ele, como showmodal(mostrar) e close(fechar)
+                        dialog.showModal();
+                    });
+
+                    closeButton.addEventListener("click", (e) => {
+                        dialog.close();
+                    });
+
+                    seta1.addEventListener("click", (e) => {
+                        dialog.close();
+                        dialog2.showModal();
+                    });
+                    seta2.addEventListener("click", (e) => {
+                        dialog2.close()
+                        dialog.showModal()
+                    });
+                    closeButton2.addEventListener("click", (e) => {
+                        dialog2.close()
+                    });
+                    seta3.addEventListener("click", (e) => {
+                        dialog2.close()
+                        dialog3.showModal()
+                    });
+                    seta4.addEventListener("click", (e) => {
+                        dialog3.close()
+                        dialog2.showModal()
+                    });
+                    closeButton3.addEventListener("click", (e) => {
+                        dialog3.close()
+                    });
+                    seta5.addEventListener("click", (e) => {
+                        dialog3.close()
+                        dialog.showModal()
+                    });
+
+                    coment.addEventListener("click", (e) => {
+                        dialog4.showModal()
+                    });
+                    closebutton4.addEventListener("click", (e) => {
+                        dialog4.close()
+                    });
+
+
+                </script>
+                
+               
+        </div>
+
+
+        
+
+
+
+        </tbody>
+
+</body>
+</html>
